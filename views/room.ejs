@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom clone</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/fontawesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <input hidden type="text" id="roomId" value="<%= roomId %>">
+
+
+    <div class="main">
+        <div class="main__left">
+            <div class="main__videos ">
+                <!-- add class = "has-share" when sharing occurs -->
+                <div id="video-grid">
+                    <!-- add class = "smaller" when sharing occurs -->
+
+                </div>
+
+                <div id="screen-share">
+                    <!-- add class = "visible" when sharing occurs -->
+
+                </div>
+
+            </div>
+
+            <div class="main__controls">
+                <div class="main__controls__block">
+                    <div class="main__controls__button main__mute_toggle" id="muteToggle">
+                        <i class="fa fa-microphone "></i>
+                        <span> Mute </span>
+                    </div>
+                    <div class="main__controls__button main__video_toggle" id="videoToggle">
+                        <i class="fa fa-video-camera"></i>
+                        <span> Stop Video </span>
+                    </div>
+                </div>
+                <div class="main__controls__block">
+                    <div class="main__controls__button" id="shareScreenToggle">
+                        <i class="fa fa-address-card "></i>
+                        <span> Screen Share </span>
+                    </div>
+                    <div class="main__controls__button">
+                        <i class="fa fa-users"></i>
+                        <span> Participants </span>
+                    </div>
+                    <div class="main__controls__button">
+                    </div>
+                </div>
+                <div class="main__controls__block">
+                    <div class="main__controls__button">
+                        <i class=" "></i>
+                        <span> Leave Meeting </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="main__right">
+
+        </div>
+
+    </div>
+</body>
+<script src="scripts/jquery.min.js"></script>
+<!-- <script src="scripts/bootstrap/js/bootstrap.min.js"></script> -->
+<script src="socket.io/socket.io.js"></script>
+<script src="scripts/peerjs.min.js"></script>
+<script src="scripts/util.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/chat.js"></script>
+
+</html>

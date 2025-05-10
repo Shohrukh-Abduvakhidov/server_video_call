@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #242424;
+}
+
+#video-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background-color: #242424;
+  gap: 20px;
+} 
+
+#video-grid.smaller {
+  display: flex;
+  justify-content: top;
+  align-items: flex-start;
+}
+
+#video-grid.smaller > video {
+  height: 100px;
+  width: 200px;
+}
+
+video {
+  height: 300px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+}
+
+.main__left {
+  flex-basis: 80%;
+  border-right: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__videos {
+  flex-grow: 1;
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__videos.has-share {
+  flex-direction: column;
+  align-items: start;
+}
+
+.main__right {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 1rem;
+  flex-basis: 20%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: #242424;
+  color: #f5f5f5;
+}
+body {
+  background-color: #242424;
+}
+.main__controls {
+  display: flex;
+  background-color: #242424;
+  color: #fff;
+}
+.main__controls__block {
+  display: flex;
+  font-size: 12px;
+}
+
+.main__controls__block:nth-child(2) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__controls__block:last-child {
+  color: #cc3833;
+}
+
+.main__controls__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  height: 4rem;
+  padding: 0 1rem;
+}
+
+.main__controls__button:hover {
+  background-color: #414142;
+}
+
+.main__chat_window {
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+
+.main_message_container {
+  padding: 22px 12px;
+  display: flex;
+}
+
+.main__header {
+  text-align: center;
+}
+
+.main__header > h6 {
+  margin: 0;
+}
+
+.main_message_container input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: #f5f5f5;
+  height: 40px;
+}
+
+.main_message_container input:focus {
+  transition: ease-in-out, width 0.35s ease-in-out;
+  outline: none;
+  background-color: #4a4747;
+  padding-left: 1rem;
+}
+
+.messages {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+.message {
+  margin: 2rem 0;
+  background-color: #545050;
+  padding: 1rem;
+}
+
+#sender {
+  background-color: #b5aeae !important;
+}
+
+.unmute {
+  color: #cc3833;
+}
+
+#screen-share.visible {
+  background-color: #cc3833;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#screen-share.visible video {
+  height: 80vh;
+  width: 100%;
+}
